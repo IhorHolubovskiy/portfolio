@@ -20,7 +20,7 @@ var score_audio = new Audio();
 
 fly.src = "petia2.aac";
 score_audio.src = "petia1.aac";
-var gap = 90;
+var gap = 100;
 
 document.addEventListener("touch", moveUp);
 document.addEventListener("click", moveUp);
