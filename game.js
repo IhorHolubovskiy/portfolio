@@ -22,6 +22,7 @@ fly.src = "petia2.aac";
 score_audio.src = "petia1.aac";
 var gap = 90;
 
+document.addEventListener("tap", moveUp);
 document.addEventListener("click", moveUp);
 document.addEventListener("keydown", moveUp);
 
