@@ -8,24 +8,23 @@ var fg = new Image(); // Создание объекта
 var pipeUp = new Image(); // Создание объекта
 var pipeBottom = new Image(); // Создание объекта
 
-bird.src = "img/bird.png"; // Указание нужного изображения
-bg.src = "img/bg.png"; // Аналогично
-fg.src = "img/fg.png"; // Аналогично
-pipeUp.src = "img/pipeUp.png"; // Аналогично
-pipeBottom.src = "img/pipeBottom.png"; // Аналогично
+bird.src = "../game/img/bird.png"; // Указание нужного изображения
+bg.src = "../game/img/bg.png"; // Аналогично
+fg.src = "../game/img/fg.png"; // Аналогично
+pipeUp.src = "../game/img/pipeUp.png"; // Аналогично
+pipeBottom.src = "../game/img/pipeBottom.png"; // Аналогично
 
 
 var fly = new Audio();
 var score_audio = new Audio();
 
-fly.src = "petia2.aac";
-score_audio.src = "petia1.aac";
+fly.src = "../game/petia2.aac";
+score_audio.src = "../game/petia1.aac";
 var gap = 100;
 
 document.addEventListener("touch", moveUp);
 document.addEventListener("click", moveUp);
 document.addEventListener("keydown", moveUp);
-
 function moveUp(){
 	yPos -= 25;
 
@@ -91,4 +90,5 @@ if(pipe[i].x ==5 ) {
 }
 
 pipeBottom.onload=draw;
+
 
