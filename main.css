@@ -35,7 +35,7 @@ img {
 	background: #343c4e;
 	background-image: url("2.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: auto;
 	background-size: cover;
 
 	height: 100vh;
